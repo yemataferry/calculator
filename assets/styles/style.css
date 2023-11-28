@@ -9,22 +9,10 @@ body {
   font-size: 1.4rem;
 }
 
-header {
-  display: flex;
-  justify-content: space-around;
-  color: white;
-  padding-top: 0.5rem;
-}
-
-.box-2 {
-  display: flex;
-  gap: 0.8rem;
-}
-
 .main-button {
   display: flex;
   flex-direction: column;
-  margin: 0 1.3rem;
+  margin: 0 1.4rem;
   padding-top: 3rem;
 }
 
@@ -66,12 +54,4 @@ button {
   color: white;
   background-color: #464242b0;
   font-size: 1.4rem;
-}
-
-@media only screen and (min-width: 768px){
-  .box-1,
-  .box-2 {
-    display: none;
-  }
-  
 }
