@@ -1,66 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./assets/styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./assets/styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-</head>
-<body>
-    <header>
-        <div class="box-1">
-            <b>9:15</b>
-        </div>
-        <div class="box-2">
-            <div>
-                <span class="material-symbols-outlined">wifi</span>
+    </head>
+    <body>
+        <header>
+            <div class="box-1">
+                <b>9:15</b>
             </div>
-            <div>
-                <span class="material-symbols-outlined">signal_cellular_alt</span>
+            <div class="box-2">
+                <div>
+                    <span class="material-symbols-outlined">wifi</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">signal_cellular_alt</span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">battery_full_alt</span>
+                </div>
             </div>
-            <div>
-                <span class="material-symbols-outlined">battery_full_alt</span>
+        </header>
+        <div class="main-button">
+            <div class="display">
+                <input type="text" id="screen" placeholder="0" style="cursor: alias;">
+            </div>
+            <div class="buttons">
+                <button  style="background-color: #c7c4bbdc; color: #000;">AC</button>
+                <button  style="background-color: #c7c4bbdc;color: #000;">%</button>
+                <button  style="background-color: #c7c4bbdc;color: #000;"><span class="material-symbols-outlined">backspace</span></button>
+                <button style="background-color: #ffae00;">/</button>
+            </div>
+            <div class="buttons">
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button style="background-color: #ffae00;">X</button>
+            </div>
+            <div class="buttons">
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button style="background-color: #ffae00;">-</button>
+            </div>
+            <div class="buttons">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button style="background-color: #ffae00;">+</button>
+            </div>
+            <div class="buttons">
+                <button>.</button>
+                <button>0</button>
+                <button>+/-</button>
+                <button style="background-color: #ffae00;">=</button>
             </div>
         </div>
-    </header>
-    <div class="main-button">
-        <div class="display">
-            <input type="text" id="screen" placeholder="0" style="cursor: alias;">
-        </div>
-        <div class="buttons">
-            <button  style="background-color: #c7c4bbdc; color: #000;">AC</button>
-            <button  style="background-color: #c7c4bbdc;color: #000;">%</button>
-            <button  style="background-color: #c7c4bbdc;color: #000;"><span class="material-symbols-outlined">backspace</span></button>
-            <button style="background-color: #ffae00;">/</button>
-        </div>
-        <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button style="background-color: #ffae00;">X</button>
-        </div>
-        <div class="buttons">
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button style="background-color: #ffae00;">-</button>
-        </div>
-        <div class="buttons">
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button style="background-color: #ffae00;">+</button>
-        </div>
-        <div class="buttons">
-            <button>.</button>
-            <button>0</button>
-            <button>+/-</button>
-            <button style="background-color: #ffae00;">=</button>
-        </div>
-    </div>
-    <script src="../java-intro/index.js"></script>
-</body>
+    </body>
 </html>
