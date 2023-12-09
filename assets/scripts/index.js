@@ -21,8 +21,7 @@ function plusMinus () {
 function arithmeticOperation (a, b, sign) {
   if (b === 0 && a / b) {
     return 'infinity'
-  }
-  else {
+  } else {
     switch (sign) {
       case '+':
         return a + b
@@ -35,7 +34,7 @@ function arithmeticOperation (a, b, sign) {
       case '%':
         return a % b
       case '.':
-        return a . b
+        return a.b
       case '-/+':
         return plusMinus()
       case 'AC':
@@ -43,21 +42,21 @@ function arithmeticOperation (a, b, sign) {
       case 'd':
         return del()
       default:
-        'No valid operation'
+        return 'No valid operation'
         break
     }
   }
 }
-console.log(arithOp(5, 4, '-'))
+console.log(arithmeticOperation(5, 4, '-'))
 
 function show (val) {
   monitor.value += val
 }
+show(5)
 
 function mathOperation () {
   const equation = monitor.value
   const answer = eval(equation)
   monitor.value = answer
-  // let display = document.getElementById('screen').value
-
 }
+mathOperation()
