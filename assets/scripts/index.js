@@ -6,7 +6,7 @@ clr()
 
 function del () {
   if (monitor.value.length > 0) {
-    let screenSplit = monitor.value.split('')
+    const screenSplit = monitor.value.split('')
     screenSplit.pop()
     const screenJoin = screenSplit.value.join('')
     monitor.value = screenJoin
@@ -15,13 +15,13 @@ function del () {
 
 function plusMinus () {
   const currentNum = parseFloat(monitor.value)
-  monitor.value = -currentNum 
-  }
+  monitor.value = -currentNum
+}
 
 function arithmeticOperation (a, b, sign) {
   if (b === 0 && a / b) {
-    return 'Error: Division by 0 invalid'
-  } 
+    return 'infinity'
+  }
   else {
     switch (sign) {
       case '+':
@@ -52,11 +52,11 @@ console.log(arithOp(5, 4, '-'))
 
 function show (val) {
   monitor.value += val
-} 
+}
 
 function mathOperation () {
   const equation = monitor.value
-  const answer = arithmeticOperation(equation)
+  const answer = eval(equation)
   monitor.value = answer
   // let display = document.getElementById('screen').value
 

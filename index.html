@@ -13,14 +13,14 @@
         <!-- <h1>FERRY CALCULATOR </h1> -->
         <div class="main-button">
             <!-- <b>FERRY CALCULATOR</b> -->
-            <div class="display">
+            <!-- <div class="display"> -->
                 <b><input type="text" id="screen" placeholder="0" style="cursor: alias;"></b>
-            </div>
+            <!-- </div> -->
             <div class = "container-buttons">
                 <div class="buttons">
                     <input type="button" class="num"  value="AC" onclick="clr()" style="background-color: #c7c4bbdc; color: #000;">
+                    <input type="button" class="num" value="-/+" onclick="plusMinus()" style="background-color: #c7c4bbdc;color: #000;">
                     <input type="button" class="num" value="%" onclick="show('%')" style="background-color: #c7c4bbdc;color: #000;">
-                    <input type="button" class="num" value="-/+" onclick="negative()" style="background-color: #c7c4bbdc;color: #000;">
                     <input type="button" class="num" value="/" onclick="show('/')" style="background-color: #ffae00;">
                 </div>
                 <div class="buttons">
@@ -43,7 +43,7 @@
                 </div>
                 <div class="buttons">
                     <!-- <input type="button" class="num" value="-/+" onclick="plusMinus()"> -->
-                    <input type="button" class="num" value="0" onclick="show('0')">
+                    <input type="button" class="zero" value="0" onclick="show('0')">
                     <input type="button" class="num" value="." onclick="show('.')">
                     <input type="button" class="num" value="=" onclick="mathOperation()" style="background-color: #ffae00;">
                 </div>
