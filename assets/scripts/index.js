@@ -4,14 +4,14 @@ function clr () {
 }
 clr()
 
-function del () {
-  if (monitor.value.length > 0) {
-    const screenSplit = monitor.value.split('')
-    screenSplit.pop()
-    const screenJoin = screenSplit.value.join('')
-    monitor.value = screenJoin
-  }
-}
+// function del () {
+//   if (monitor.value.length > 0) {
+//     const screenSplit = monitor.value.split('')
+//     screenSplit.pop()
+//     const screenJoin = screenSplit.value.join('')
+//     monitor.value = screenJoin
+//   }
+// }
 
 function plusMinus () {
   const currentNum = parseFloat(monitor.value)
@@ -42,7 +42,7 @@ function arithmeticOperation (a, b, sign) {
       case 'd':
         return del()
       default:
-        return 'No valid operation'
+         'No valid operation'
         break
     }
   }
@@ -56,7 +56,7 @@ show(5)
 
 function mathOperation () {
   const equation = monitor.value
-  const answer = eval(equation)
+  const answer = Function('return' + equation)()
   monitor.value = answer
 }
 mathOperation()
