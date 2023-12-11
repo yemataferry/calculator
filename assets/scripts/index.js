@@ -1,8 +1,14 @@
 const monitor = document.getElementById('screen')
+
 function clr () {
   monitor.value = ''
 }
 clr()
+
+function show (val) {
+  monitor.value += val
+}
+show(0)
 
 // function del () {
 //   if (monitor.value.length > 0) {
@@ -12,6 +18,8 @@ clr()
 //     monitor.value = screenJoin
 //   }
 // }
+
+function error(){ return 'Error'}
 
 function plusMinus () {
   const currentNum = parseFloat(monitor.value)
@@ -39,24 +47,18 @@ function arithmeticOperation (a, b, sign) {
         return plusMinus()
       case 'AC':
         return ''
-      case 'd':
-        return del()
-      default:
-         'No valid operation'
-        break
+      default :
+        'Error'
+      break
     }
   }
 }
 console.log(arithmeticOperation(5, 4, '-'))
-
-function show (val) {
-  monitor.value += val
-}
-show(5)
 
 function mathOperation () {
   const equation = monitor.value
   const answer = Function('return' + equation)()
   monitor.value = answer
 }
+
 mathOperation()
