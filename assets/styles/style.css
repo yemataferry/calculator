@@ -41,14 +41,14 @@ body {
 }
 
 .num {
-  padding: 1.5rem 0;
+  padding: 1.2rem 0;
   width: 100%;
   height: 100%;
   border: 1px solid #4b4949b0;
   border-radius: 10rem;
   color: white;
   background-color: #3b3838b0;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
 .zero {
@@ -59,7 +59,7 @@ body {
   border-radius: 10rem;
   color: white;
   background-color: #3f3c3cb0;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   padding-right: 6.5rem;
   text-align: center;
 }
@@ -83,8 +83,6 @@ body {
     border: 1px solid black;
     border-radius: 1.9rem;
     background-color: #000;
-    /* margin: auto; */
-    /* width: 23vw; */
     width: 290px;
     height: 93vh;
   }

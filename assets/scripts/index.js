@@ -19,7 +19,9 @@ show(0)
 //   }
 // }
 
-function error(){ return 'Error'}
+function error () {
+  return 'Error'
+}
 
 function plusMinus () {
   const currentNum = parseFloat(monitor.value)
@@ -47,9 +49,9 @@ function arithmeticOperation (a, b, sign) {
         return plusMinus()
       case 'AC':
         return ''
-      default :
-        'Error'
-      break
+        default :
+        error()
+        break
     }
   }
 }
