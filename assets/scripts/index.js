@@ -39,7 +39,7 @@ function arithmeticOperation (a, b, sign) {
       return clr()
     default:
       monitor.value = 'Error'
-    break
+      break
   }
 }
 // console.log(arithmeticOperation(5, 4, '-'))
